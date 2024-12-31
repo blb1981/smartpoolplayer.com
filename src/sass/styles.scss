@@ -4,10 +4,14 @@
   --clr-cream-400: #f0ffbe;
   --clr-cream-500: #ccdaa1;
 
+  --clr-brown-300: #7e5038;
   --clr-brown-400: #412516;
+  --clr-brown-500: #241209;
 
   --ff-heading: 'Yellowtail', cursive;
   --ff-main: 'Mooli', sans-serif;
+
+  --transition: 0.25s ease;
 
   --test: #000000;
 }
@@ -41,6 +45,16 @@ h1 {
   }
 }
 
+a {
+  color: var(--clr-cream-400);
+  transition: var(--transition);
+  font-weight: bolder;
+
+  &:hover {
+    color: var(--clr-cream-500);
+  }
+}
+
 button {
   font-size: 1rem;
   padding: 0.5em 1em;
@@ -49,7 +63,7 @@ button {
   background-color: var(--clr-cream-400);
   color: var(--clr-brown-400);
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: var(--transition);
   border-radius: 1rem;
 }
 
@@ -70,6 +84,11 @@ footer {
 
 footer a {
   color: var(--clr-brown-400);
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--clr-brown-300);
+  }
 }
 
 .container {
@@ -248,4 +267,32 @@ form > * {
 
 #countdown {
   margin-bottom: 1rem;
+}
+
+.main-nav {
+  width: 100%;
+  border-bottom: 1px solid var(--clr-cream-400);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    padding: 0.5rem;
+    padding-left: 0;
+  }
+
+  &__link {
+    color: var(--clr-cream-400);
+    transition: var(--transition);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--clr-cream-500);
+    }
+  }
 }
