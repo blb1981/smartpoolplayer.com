@@ -77,17 +77,21 @@ button:disabled:hover {
 }
 
 footer {
-  color: var(--clr-brown-400);
+  width: min(100%, 50rem);
+  margin: 0 auto;
+  background-color: var(--clr-brown-400);
+  color: var(--clr-cream-400);
   margin-top: auto;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 footer a {
-  color: var(--clr-brown-400);
+  color: var(--clr-cream-400);
   transition: var(--transition);
+  font-weight: normal;
 
   &:hover {
-    color: var(--clr-brown-300);
+    color: var(--clr-cream-500);
   }
 }
 
@@ -97,9 +101,13 @@ footer a {
   width: min(100%, 50rem);
   margin-inline: auto;
   background: linear-gradient(to bottom, #046d56, #23cf9c) no-repeat;
+  background: #046d56;
   min-height: 100vh;
   border-left: 2.5rem solid var(--clr-brown-400);
   border-right: 2.5rem solid var(--clr-brown-400);
+  border-top: 2rem solid var(--clr-brown-400);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @media screen and (max-width: 40em) {
@@ -279,17 +287,16 @@ form > * {
     justify-content: space-evenly;
     list-style: none;
     padding-left: 0;
+    margin-top: 0;
   }
 
   &__item {
     padding: 0.5rem;
-    padding-left: 0;
   }
 
   &__link {
     color: var(--clr-cream-400);
     transition: var(--transition);
-    text-decoration: none;
 
     &:hover {
       color: var(--clr-cream-500);
