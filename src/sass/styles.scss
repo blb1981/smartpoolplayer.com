@@ -29,14 +29,25 @@ body {
   color: var(--clr-cream-400);
   font-family: var(--ff-main);
   font-size: 1.125rem;
-  text-align: center;
   background: #161616;
 }
 
 h1 {
-  color: var(--clr-cream-400);
-  font-family: var(--ff-heading);
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 400px) {
@@ -77,6 +88,7 @@ button:disabled:hover {
 }
 
 footer {
+  text-align: center;
   width: min(100%, 50rem);
   margin: 0 auto;
   background-color: var(--clr-brown-400);
@@ -106,8 +118,8 @@ footer a {
   border-left: 2.5rem solid var(--clr-brown-400);
   border-right: 2.5rem solid var(--clr-brown-400);
   border-top: 2rem solid var(--clr-brown-400);
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 40em) {
@@ -280,6 +292,7 @@ form > * {
 .main-nav {
   width: 100%;
   border-bottom: 1px solid var(--clr-cream-400);
+  margin-bottom: 0.5rem;
 
   &__list {
     display: flex;
@@ -302,4 +315,35 @@ form > * {
       color: var(--clr-cream-500);
     }
   }
+}
+
+.site-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--clr-cream-400);
+  font-family: var(--ff-heading);
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--clr-cream-400);
+      transition: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .site-title {
+    font-size: 2rem;
+  }
+}
+
+.page-title {
+  text-align: center;
+}
+
+.quiz-container {
+  text-align: center;
+  margin-bottom: 1rem;
 }

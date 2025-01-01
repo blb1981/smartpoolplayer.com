@@ -198,6 +198,7 @@ function showCountDownTimer() {
 
 function removeGuessButtons() {
   guessButtonContainerEl.innerHTML = ''
+  guessButtonContainerEl.style.height = '200px'
 }
 
 function handleButtonGuess(e: Event) {
